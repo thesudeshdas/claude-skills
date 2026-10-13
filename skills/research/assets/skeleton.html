@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{one-line summary}}">
+<meta name="research:type" content="{{type}}">
+<meta name="research:date" content="{{yyyy-mm-dd}}">
+<meta name="research:project" content="{{project or repo name, or blank}}">
+<link rel="stylesheet" href="_assets/research.css">
+<script src="_assets/research.js"></script>
+</head>
+<body>
+<div class="wrap layout">
+<nav class="toc"></nav>
+<main class="content">
+
+<header class="hero">
+  <span class="type" data-type="{{type}}">{{type}}</span>
+  <h1>{{title, may wrap one word in <span class="grad">…</span>}}</h1>
+  <p class="lede">{{one or two sentences: what this doc answers and for whom}}</p>
+  <div class="meta"><span class="chip">{{yyyy-mm-dd}}</span><span class="chip">{{project}}</span></div>
+</header>
+
+<section class="block">
+  <h2>tl;dr</h2>
+  <div class="tldr">…</div>
+</section>
+
+<!-- one <section class="block"><h2>…</h2> … </section> per section from references/types.md -->
+
+</main>
+</div>
+</body>
+</html>
